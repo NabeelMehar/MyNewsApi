@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".activities.ShowActivity">
+
+
+    <ImageView
+        android:id="@+id/showimg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:elevation="8dp"
+        android:src="@drawable/splash_two"
+        />
+
+    <TextView
+        android:id="@+id/showtitletv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/showimg"
+        android:textStyle="bold"
+        android:textSize="21dp"
+        android:text="Hello This Is a Sample News I used To Check My News "
+        android:layout_marginTop="6dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/showdesctv"
+        android:layout_below="@+id/showtitletv"
+        android:text="This is the desrciption of the News That is about to come up"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/showdatetv"
+        android:layout_below="@+id/showdesctv"
+        android:layout_marginTop="6dp"
+        android:text="12-12-2016"/>
+
+    <TextView
+        android:id="@+id/showcontenttv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/showdatetv"
+        android:layout_marginTop="8dp"
+        android:text="Jamia Firing: The police said some students told them that a shot was fired at the university gate (File)
+    New Delhi: A shot was fired at gate No. 5 of Jamia Millia Islamia University in south Delhi on Sunday night, according to news agency ANI. Two suspects,… [+2992 chars]"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/showauthortv"
+        android:layout_below="@+id/showcontenttv"
+        android:text="The Times Of India"
+        android:layout_marginTop="6dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/showdetailurl"
+        android:layout_marginTop="6dp"
+        android:layout_below="@id/showauthortv"
+        android:text="https://www.ndtv.com/india-news/firing-at-gate-of-jamia-university-in-delhi-amid-anti-caa-protest-news-agency-ani-2173720"
+        />
+</RelativeLayout>
